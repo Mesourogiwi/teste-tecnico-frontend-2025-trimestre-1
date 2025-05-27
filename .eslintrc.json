@@ -1,0 +1,92 @@
+{
+  "extends": "next/core-web-vitals",
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "unused-imports"],
+  "rules": {
+    "no-console": "error",
+    "no-unused-vars": "off",
+    "unused-imports/no-unused-imports": "error",
+    "@typescript-eslint/no-unused-vars": "error",
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": "error",
+    "prefer-const": "error",
+    "sort-keys": ["warn", "asc"],
+    "sort-vars": "warn",
+    "@typescript-eslint/sort-type-constituents": "warn",
+    "no-unsafe-optional-chaining": "error",
+    "curly": "error",
+    "react/jsx-curly-brace-presence": [
+      "error",
+      { "props": "always", "children": "never", "propElementValues": "always" }
+    ],
+    "padding-line-between-statements": [
+      "error",
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "return"
+      },
+      {
+        "blankLine": "always",
+        "prev": ["const", "let", "var"],
+        "next": "*"
+      },
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": ["const", "let", "var"]
+      },
+      {
+        "blankLine": "any",
+        "prev": ["const", "let", "var"],
+        "next": ["const", "let", "var"]
+      },
+      {
+        "blankLine": "always",
+        "prev": "directive",
+        "next": "*"
+      },
+      {
+        "blankLine": "any",
+        "prev": "directive",
+        "next": "directive"
+      },
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "for"
+      },
+      {
+        "blankLine": "always",
+        "prev": "import",
+        "next": "*"
+      },
+      {
+        "blankLine": "any",
+        "prev": "import",
+        "next": "import"
+      },
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "export"
+      },
+      {
+        "blankLine": "any",
+        "prev": "export",
+        "next": "export"
+      },
+      {
+        "blankLine": "always",
+        "prev": "block-like",
+        "next": "*"
+      },
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "block-like"
+      }
+    ]
+  },
+  "ignorePatterns": ["src/__gql__", ".husky", ".next", ".swc"]
+}
